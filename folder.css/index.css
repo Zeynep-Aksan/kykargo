@@ -1,0 +1,79 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* Diğer sayfalarınla uyumlu turuncu gradyan arka plan */
+    background: linear-gradient(135deg, #ff9a44 0%, #ff6a00 100%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* KYKARGO Logosu */
+.logo {
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+    text-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease-out;
+}
+
+/* Hoşgeldiniz Başlığı */
+.baslık {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+/* Buton Konteynırı */
+.link-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Kayıt Ol ve Giriş Yap Butonları */
+.btn {
+    text-decoration: none;
+    color: #ff6a00;
+    background: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Buton Üzerine Gelince */
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+    background: #f8f8f8;
+    color: #e65c00;
+}
+
+/* Basit Giriş Animasyonu */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 480px) {
+    .logo { font-size: 50px; }
+    .link-container { flex-direction: column; }
+    .btn { width: 200px; }
+}
